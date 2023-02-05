@@ -1,83 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
-  <link rel="stylesheet" href="style.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-
-</head>
-<body>
-  <section id="header">
-    <div class="navbar">
-      <a href="#"><img src="images/logo.svg" alt=""></a>
-      <div class="ul-container">
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <div class="navbar">
+        <a href="#"><img src="images/logo.svg" alt="" /></a>
+        <nav>
           <ul id="navbar-ul">
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
+        </nav>
+
+        <div id="mobile">
+          <a href="#" class="hamburger-menu"
+            ><img src="images/icon-hamburger.svg" alt=""
+          /></a>
+        </div>
       </div>
-      
-      <div id="mobile">
-        <a href="#"><img src="images/icon-hamburger.svg" alt=""></a>
+      <div class="header-content">
+        <p>We are creatives</p>
+        <img class="arrow-down" src="images/icon-arrow-down.svg" alt="" />
       </div>
+    </section>
 
+    <section id="transform-card" class="card">
+      <div class="img-box">
+        <img src="images/desktop/image-transform.jpg" alt="" />
+      </div>
+      <div class="content-box">
+        <h2 class="header">Transform your brand</h2>
+        <p class="content">
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </section>
+    <section id="stand-card" class="card">
+      <div class="img-box">
+        <img src="images/desktop/image-stand-out.jpg" alt="" />
+      </div>
+      <div class="content-box">
+        <h2 class="header">Stand out to the right audience</h2>
+        <p class="content">
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
+        </p>
+        <button>Learn More</button>
+      </div>
+    </section>
+    <div id="card-main">
+      <section id="graphic-design" class="card-2">
+        <h2 class="header">Graphic Design</h2>
+        <p class="content">
+          Great design makes you memorable.We deliver artwork that underscores
+          your brand message and captures potential clients' attention.
+        </p>
+      </section>
+      <section id="photography" class="card-2">
+        <h2 class="header">Photography</h2>
+        <p class="content">
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </section>
     </div>
-    <div class="header-content">
-      <p>We are creatives</p>
-      <img src="images/icon-arrow-down.svg" alt="">
-    </div>
-  </section>
-  
-  
-  
-  
 
-  
+    <section id="client-testimonials">
+      <h3>Client testimonials</h3>
+      <div class="profile-card-container">
+        <div class="profile-card">
+          <img src="images/image-emily.jpg" alt="" />
+          <p class="profile-content">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <p class="name">Emily R.</p>
+          <p class="job">Marketing Director</p>
+        </div>
+        <div class="profile-card">
+          <img src="images/image-thomas.jpg" alt="" />
+          <p class="profile-content">
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <p class="name">Thomas S.</p>
+          <p class="job">Chief Operating Officer</p>
+        </div>
+        <div class="profile-card">
+          <img src="images/image-jennie.jpg" alt="" />
+          <p class="profile-content">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <p class="name">Jennie F.</p>
+          <p class="job">Business Owner</p>
+        </div>
+      </div>
+    </section>
+    <section id="img-gallery">
+      <img src="images/mobile/image-gallery-milkbottles.jpg" alt="" />
+      <img src="images/mobile/image-gallery-orange.jpg" alt="" />
+      <img src="images/mobile/image-gallery-cone.jpg" alt="" />
+      <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="" />
+    </section>
+    <footer>
+      <img src="images/footer-logo.svg" alt="" />
+      <ul class="footer-link">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+      <ul class="social-link">
+        <li>
+          <a href="#"><img src="images/icon-facebook.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/icon-instagram.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/icon-twitter.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/icon-pinterest.svg" alt="" /></a>
+        </li>
+      </ul>
+    </footer>
 
-  Transform your brand
-
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
