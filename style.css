@@ -107,14 +107,17 @@ nav.open{
 
 #navbar-ul li a{
     color: var(--dark-grayish-blue);
+    position: relative;
+    z-index: 11;
 }
 
 #navbar-ul li:hover{
-  background-color: var(--yellow);
-  padding: 1rem 2rem;
-  border-radius: 30px;
   text-transform: uppercase;
+  position: relative;
+  color: black;
 }
+
+
 
 #navbar-ul li:hover  #navbar-ul li a{
     color: black;
@@ -148,7 +151,7 @@ nav.open{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2rem;
+    padding: 4rem 2rem;
 }
 
 .card .content-box .header{
@@ -170,6 +173,39 @@ nav.open{
     font-family: 'Fraunces', serif;
     font-weight: 900;
     font-size: 0.9rem;
+    position: relative;
+    z-index: 1;
+}
+
+#transform-card .content-box button::after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 105%;
+    border-radius: 5px;
+    background-color: var(--yellow);
+    bottom: 0px;
+    left: -3px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#transform-card .content-box button:hover::after,
+#stand-card .content-box button:hover::after{
+    opacity: 1;
+}
+
+#stand-card .content-box button::after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 105%;
+    border-radius: 5px;
+    background-color: var(--soft-red);
+    bottom: 0px;
+    left: -3px;
+    opacity: 0.5;
+    z-index: -1;
 }
 
 /*STAND CARD*/
@@ -240,6 +276,11 @@ nav.open{
 
 
 /*PROFILE CARD*/
+
+#client-testimonials{
+    padding: 4rem 0;
+}
+
 
 #client-testimonials h3{
     font-family: 'Fraunces', serif;
@@ -334,6 +375,10 @@ footer{
     font-size: 1rem;
 }
 
+.footer-link li a:hover{
+    color: var(--white);
+}
+
 .social-link{
     display: flex;
     gap: 2rem;
@@ -344,6 +389,7 @@ footer{
     width: 20px;
     height: 20px;
 }
+
 
 
 
@@ -385,11 +431,19 @@ footer{
         display: none;
     }
 
-    #navbar-ul li:hover{
-        background-color: var(--white);
-        padding: 0.5rem 1rem;
-        border-radius: 30px;
-        text-transform: uppercase;
+    #navbar-ul li{
+        position: relative;
+    }
+
+    #navbar-ul li:hover::after{
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      bottom: -5px;
+      left: 0;
+      text-transform: none;
     }
 
     #transform-card{
@@ -440,5 +494,9 @@ footer{
 
     .card .content-box .content{
         font-size: 1.3rem;
+    }
+
+    .card-2 .header{
+        margin-top: 5rem;
     }
 }
